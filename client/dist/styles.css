@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+}
+
+head {
+  display: none;
+}
+
+body {
+  display: block;
+  background-color: ghostwhite;
+  min-width: 730px;
+}
+
+html, body, ul, p, button {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+header {
+  background: #0084bf;
+  background-image: linear-gradient(45deg, #0084bf, #0c8996);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+#top-logo {
+  position: absolute;
+  left: 0px;
+  width: 52px;
+  height: auto;
+  margin: 25px;
+  cursor: pointer;
+}
+
+#app {
+  display: inherit;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#app-title {
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,0.85);
+  font-family: "Roboto", sans-serif;
+}

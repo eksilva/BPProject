@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { FcHome } from 'react-icons/fc';
 
 
 const Index = () => {
   return (
-    <div className="heading">
-      <h1>Hello World</h1>
-    </div>
+    <header>
+      <FcHome id="top-logo" />
+      <div id="app-title">Financial Advisor</div>
+    </header>
   )
 }
 
