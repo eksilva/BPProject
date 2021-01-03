@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { FcHome } from 'react-icons/fc';
 
+import Header from './components/Header.jsx';
+import RiskSelector from './components/RiskSelector.jsx';
+import RiskTable from './components/RiskTable.jsx';
 
 const Index = () => {
   return (
-    <header>
-      <FcHome id="top-logo" />
-      <div id="app-title">Financial Advisor</div>
-    </header>
+    <div id="content">
+      <Header />
+      <RiskSelector />
+      <RiskTable />
+    </div>
   )
 }
 
