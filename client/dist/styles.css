@@ -57,6 +57,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 }
 
 .risk-selector-header-labels {
@@ -166,6 +167,6 @@ td, th {
   padding: 8px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: #dddddd;
 }
