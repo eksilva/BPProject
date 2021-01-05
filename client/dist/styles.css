@@ -84,7 +84,7 @@ header {
 
 .risk-label {
   display: flex;
-  margin-right: 96px;
+  margin-right: 115px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -144,29 +144,22 @@ header {
 }
 
 #graphic {
-  position: relative;
-  display: flex;
-  width: 720px;
-}
-
-#risk-table {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 620px;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #e8e8e8;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #f5f5f5;
 }
