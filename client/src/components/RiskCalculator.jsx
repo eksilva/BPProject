@@ -1,5 +1,6 @@
 import React from 'react';
 import RiskCalculatorRow from './RiskCalculatorRow.jsx';
+import CustomRiskTable from './CustomRiskTable.jsx';
 
 class RiskCalculator extends React.Component {
   constructor(props) {
@@ -16,30 +17,7 @@ class RiskCalculator extends React.Component {
         <div className="risk-calculator-label-container">
           <div className="risk-calculator-label-risk">Risk Level 1</div>
         </div>
-        <div id="custom-risk-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Risk</th>
-                <th>Bonds %</th>
-                <th>Large Cap %</th>
-                <th>Mid Cap %</th>
-                <th>Foreign %</th>
-                <th>Small Cap %</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>80</td>
-                <td>20</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <CustomRiskTable />
         <div id="currentInvestmentContainer">Please Enter Your Current Portfolio
           <div className="button" id="rebalance-button">Rebalance</div>
         </div>
@@ -51,11 +29,12 @@ class RiskCalculator extends React.Component {
             <label>Recommended Transfers</label>
           </div>
           <div className="risk-calculator-main">
-            <div className="risk-calculator-man-row">
-              <label>Bonds $:</label>
-              <RiskCalculatorRow />
-            </div>
-
+              <RiskCalculatorRow label="Bonds $:"/>
+              <RiskCalculatorRow label="Large Cap $:"/>
+              <RiskCalculatorRow label="Mid Cap $:"/>
+              <RiskCalculatorRow label="Foreign $:"/>
+              <RiskCalculatorRow label="Small Cap $:"/>
+            <div className="risk-calculator-transfers"></div>
           </div>
         </div>
       </div>

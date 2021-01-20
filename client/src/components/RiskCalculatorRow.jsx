@@ -4,6 +4,7 @@ export class RiskCalculatorRow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      label: props.label,
       amount: '',
     }
 
@@ -19,11 +20,12 @@ export class RiskCalculatorRow extends React.Component {
 
   render() {
     return (
-      <div className="risk-calculator-man-row">
+      <div className="risk-calculator-main-row">
+        <label>{this.state.label}</label>
         <div className="risk-calculator-main-row-box">
           <input type="text" className="risk-calculator-main-input" value={this.state.amount} onChange={this.handleChange}></input>
-          <input type="text" class="risk-calculator-main-difference" disabled></input>
-          <input type="text" class="risk-calculator-main-new" disabled></input>
+          <input type="text" className="risk-calculator-main-difference" disabled></input>
+          <input type="text" className="risk-calculator-main-new" disabled></input>
         </div>
       </div>
     )
